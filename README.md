@@ -1,3 +1,11 @@
-# wiki
-link to file:
-[linux/help/cli](linux/help/cli.md)
+My Wiki
+============================================
+
+* [Home](.md/home.md)
+* [Slackware](.md/slackware.md)
+* [Linux](.md/linux.md)
+* [Vim](.md/vim.md)
+* [Programming](.md/programming.md)
+* [Computing](.md/computing.md)
+* [Interests](.md/interests.md)
+* [Media](.md/media.md)

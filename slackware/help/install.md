@@ -1,8 +1,6 @@
 
 # Slackware install using usb drive 
 
-[slackware](file:../../.html/slackware.html)
-
 ## Install using prepared iso file
 
 1. download the iso from https://slackware.nl/slackware/slackware-iso/slackware64-15.0-iso/
