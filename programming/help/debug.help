@@ -1,0 +1,16 @@
+* how to buidl code with debug symbols
+gcc -g
+
+* How to build code with cmake (with Debug symblols) and run it in one command
+(cd Debug; cmake -DCMAKE_BUILD_TYPE=Debug ..; cd -; cmake --build Debug && ./Debug/safe_queue)
+
+* How to build code with cmake (with Debug symblols) and start gdb in one command
+(cd Debug; cmake -DCMAKE_BUILD_TYPE=Debug ..; cd -; cmake --build Debug && gdb ./Debug/safe_queue)
+
+* GDB Debug commands:
+run             run the executable inside debugger
+bt              backtrace, show the trace after segmentaion fault
+frame 3         put the stack on frame 3 (to inspect the variables)
+print buf       inspect varaible buf contents
+br main.c:8     set breakpoint in file main.c at line 8
+next            step over

@@ -1,0 +1,95 @@
+
+github markdown
+==================================================
+
+Headers
+---------------------------------------------------
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
+
+Emphasis
+---------------------------------------------------
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+~~strikethrough~~
+
+Lists
+---------------------------------------------------
+Unordered:
+* Item 1
+* Item 2
+    * Item 3
+Ordered:
+1. Item1
+2. Item2
+    1. Item 3
+
+Images
+----------------------------------------------------
+![GitHub Logo](/images/logo.png)
+
+
+Links
+----------------------------------------------------
+http://github.com - automatic!
+[GitHub](http://github.com)
+
+Files
+----------------------------------------------------
+[A relative link](other_file.md)
+
+Inline code
+----------------------------------------------------
+I think you should use an
+`<addr>` element here instead.
+
+Syntax highlighting
+----------------------------------------------------
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+
+Task list
+----------------------------------------------------
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+Tables
+-----------------------------------------------------
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
+
+vim-tabular
+==================================================
+:Tabularize /| 
+
+
+vim-markdown
+==================================================
+
+Folding
+--------------------------------------------------
+zr: reduces fold level throughout the buffer
+zR: opens all folds
+zm: increases fold level throughout the buffer
+zM: folds everything all the way
+
+za: open a fold your cursor is on
+zA: open a fold your cursor is on recursively
+zc: close a fold your cursor is on
+zC: close a fold your cursor is on recursively
+ 

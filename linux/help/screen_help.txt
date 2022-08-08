@@ -1,0 +1,34 @@
+
+screen -ls
+screen -r <partial pid>
+screen -S <session_name>
+
+
+C-a c			create a new window
+C-a A			name a window
+C-a n/p 		go to next/prev window
+C-a <num>		go to window number
+C-a k			kill a window
+C-a w 			list of windows
+C-a "			list of windows to choose from
+
+C-a [			start copy/scroolback mode
+<Esc>			Exit copy/scroolback mode
+C-a ]			paste from copy buffer
+
+C-a s			enter block scroll mode
+C-a q			quit block scroll mode
+
+C-a S			split window to regions
+C-a |			split vertically
+C-a <tab>		switch to next region
+C-a :resize 25% resize region
+C-a :remove		kill region
+
+
+
+C-a d			detach session
+C-a K			kill session
+C-a x			lock screen
+
+C-a a			Send C-a to running program

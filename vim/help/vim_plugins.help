@@ -1,0 +1,82 @@
+
+vimrc
+-----------------------------------------------------
+F2                  close buffer but keep window open
+F10                 toggle paste mode
+<leader>b           list open buffers
+<leader>gs          search multiple files with vimgrep
+<leader>gg          search multiple files with grep
+<leader>gr          search and replace multiple files
+t.                  open current file in new tab
+tc                  close tab
+<leader>W           save with sudo
+
+romainl/vim-qf
+-----------------------------------------------------
+<leader>l   toggle location window
+<leadre>q   toggle quickfix window
+[l          lprev
+]l          lnext
+[c          cprev
+]c          cnext
+    s - open in a new window
+    v - open in a new vertical window
+    t - open in a new tab
+    o - open and come back
+    O - open and close location/quickfix
+    p - open in preview
+
+
+fzf
+------------------------------------------------------
+<leader>ff          find file
+<leader>fb          find buffer
+<leader>fF          find fzf files!
+<leader>f.          find file in current dir
+
+cassio/neoterm (in gvim only)
+-----------------------------------------------------
+C-\             toggle terminal
+<leader>Esc     quit from terminal
+
+lsp
+------------------------------------------------------
+[d                  previous designation (ale)
+]d                  next designation (ale)
+
+C-]                 jump to definition
+\s                  symbol search
+\S                  workpace symbol search
+\r                  references
+\i                  implementation
+\t                  type definition
+\R                  rename
+\k                  hover}
+
+
+Shougo/defx
+------------------------------------------------------
+\\                  toggle files tree view
+\f                  show current file in file tree
+    s               open file in a split
+    v               open file in a vertical split
+    r               open in preview window
+
+    K               new dir
+    N               new file
+    D               delete
+    R               rename
+    yy              copy
+    dd              move
+    P               paste
+
+    -               cd ..
+    ~               cd to pwd
+    cd              change pwd
+    q               exit
+    x               execute_system
+    m               toggle mark
+    *               toggle select all
+    yp              yank path
+    .               toggle ignored files
+

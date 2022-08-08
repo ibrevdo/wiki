@@ -1,0 +1,73 @@
+---------------- Tmux help -------------------------
+----------------------------------------------------
+tmux                start a new session
+tmux a(ttach)       attach to session
+tmux ls             list sessions
+
+* Session consists of windows,
+* window consists of panes
+---------------------------------
+|Pane 1 (horisontal)            |
+|                               |
+|                               |
+|-------------------------------|
+|Pane 2 (horisontal) | Pane 3   |
+|                    |(vertical)|
+|                    |          |
+---------------------------------
+|s# | Window 1 | Window 2       |
+---------------------------------
+
+C-b                 default prefix
+C-b ?               see bindings
+C-b d               detach session
+
+---------------- Windows ---------------------------
+C-b c               create new window
+C-b <num>           go to window <num>
+C-b n               go to next window
+C-b p               go to previous window
+C-b w               list windows
+C-b l               go to latest window
+
+:rename-window
+C-d                 kill shell inside window/pane (closes it)
+
+---------------- Panes -----------------------------
+C-b "               split window/pane horisontally
+C-b %               split window/pane vertically
+C-b z               Zoom/unzoom current pane
+C-b <Up,Down,Left,Right)    move between panes
+C-b ;               switch to other pane
+C-b x               kill current pane
+C-b !               close other panes
+C-b { / }           swap current pane with previous/next
+
+C-b (keep pressing)+arrow   resize pane
+C-b (keep pressing)+o swap  panes pane
+
+----------------- Copy mode ------------------------
+C-b [               Enter a copy mode
+h,j,k,l             cursor navigation
+C-f / C-b           page forward / back
+g / G               go to (start / end) of the page
+Space               start selecting text
+Enter               copy selected text to system clipboard (C-v)
+C-b ]               paste text from system clipboard
+q                   Exit copy mode
+
+----------------- More commands --------------------
+:swap-window -t <num>
+C-b . <num>         move window to new number
+C-b m / M           mark/unamrk current pane
+:rename session
+
+------------ Commands useful for scripts -----------
+tmux new -s <name> -d   create a session and detach
+tmux new-window -t <name>:2 create a new window numbered 2
+
+------------------- Custom examples ----------------
+In file .tmux.conf
+set -g prefix C-s
+unbind C-b
+:source ~/.tmux.conf    source the configuration

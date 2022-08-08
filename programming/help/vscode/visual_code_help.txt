@@ -1,0 +1,15 @@
+Shortcuts
+----------------------------------------
+Ctrl-p 			Find a file by name
+Ctrl-Shift-f	Find in files
+F12				Jump to definition
+Shift-F12		List references
+Ctrl-b			hide left column
+
+F7				CMake:Build
+F5				Debug
+Shift-F5		Execute without Debugger
+
+Alt-o			jump to .h/.cpp
+Ctrl-Shift-o	show functions list
+Ctrl-d			multiple edit

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grid page example</title>
+		<style>
+		.grid-container {
+			display: grid;
+			/* grid-template-rows: auto auto auto auto; */
+			grid-template-columns: auto auto auto;
+			background-color: #2196F3;
+			border: 3px solid;
+			padding: 10px;
+		}
+		.grid_item {
+			/* background-color: rgba(255, 255, 255, 0.8);*/
+			background: yellow;
+			border: 1px solid rgba(0, 0, 0, 0.8);
+			padding: 10px;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="grid-container">
+			<div>
+				Simple Item 1 inside Container 1
+			</div>
+			<div class="grid_item">
+				Grid item 1
+				<ul>
+					<li><a href="first_help.md">first help link</a></li>
+					<li><a href="second_help.md">second help link</a></li>
+				</ul>
+			</div>
+			<div class="grid_item">
+				Grid item 2
+				<ul>
+					<li><a href="first_bookmark.md">first bookmark link</a></li>
+					<li><a href="second_bookmark">second bookmark link</a></li>
+				</ul>
+			</div>
+			<div class="grid_item">
+				Grid item 3
+				<ul>
+					<li><a href="first_bookmark.md">first bookmark link</a></li>
+					<li><a href="second_bookmark">second bookmark link</a></li>
+				</ul>
+			</div>
+			<div class="grid_item">
+				Grid item 4
+				<ul>
+					<li><a href="first_bookmark.md">first bookmark link</a></li>
+					<li><a href="second_bookmark">second bookmark link</a></li>
+				</ul>
+			</div>
+			<div>
+				Simple Item 2 inside Container 1
+			</div>
+			<div>
+				Simple Item 3 inside Container 1
+			</div>
+			<div>
+				Simple Item 4 inside Container 1
+			</div>
+			<div>
+				Simple Item 5 inside Container 1
+			</div>
+		</div>
+		<div class="grid-container">
+			<div>
+				Simple Item 1 inside Container 2
+			</div>
+		</div>
+		<div class="grid-container">
+			<div>
+				Simple Item 1 inside Container 3
+			</div>
+		</div>
+	</body>
+</html> 

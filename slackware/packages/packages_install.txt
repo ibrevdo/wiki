@@ -1,0 +1,36 @@
+
+# Slackware repositories and packages
+
+| package          | repo       | depends                        |
+| ------------     | ---------- | ------------------------------ |
+| slackpkg+        |            |                                |
+| openjre          | alienbob   |                                |
+| openjdk          | alienbob   |                                |
+| nodejs           | alienbob   |                                |
+| lua              | alienbob   |                                |
+| geoclue2         | ponce      |                                |
+| webkit2gtk       | ponce      | geoclue2                       |
+| c-ares           | ponce      |                                |
+| snappy           | ponce      |                                |
+| wireshark        | ponce      | lua c-ares snappy webkit2gtk   |
+| vivaldi          |            |                                |
+| libmspack        | SBo        |                                |
+| libdnet          | SBo        |                                |
+| open-vm-tools    | SBo        | libmspack, libdnet             |
+| imlib2           | SBo        |                                |
+| feh              | SBo        | imlib2                         |
+| smplayer         | SBo        |                                |
+| exiftool         | SBo        |                                |
+| jhead            | SBo        |                                |
+| eclipse-java     | SBo        |                                |
+| meld             | SBo        |                                |
+| fuse-exfat       | SBo        |                                |
+| yarn             | SBo        |                                |
+| slack-wallpapers | SBo        |                                |
+| qbs              | SBo        |                                |
+| qt-creator-llvm  | SBo        |                                |
+| qt-creator       | SBo        | qbs, qt-creator-llvm           |
+
+
+## Other installs
+pip install -U 'python-language-server[all]'

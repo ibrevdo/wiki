@@ -1,0 +1,25 @@
+-------------------- BASH SHORTCUTS --------------------
+
+-------------------- moving  ---------------------------
+C-a                 go to start of line
+C-e                 go to end of line
+Alt-b               go back one word
+Alt-f               go forward one word
+C-n                 next command
+C-p                 previous command
+C-l                 clear screen
+C-c                 cancel command
+
+-------------------- editing ---------------------------
+C-w                 delete one word back
+Alt-d               delete one word forward
+C-u                 delete till start of line
+C-k                 delete till end of line
+C-y                 paste last deleted text
+    Alt-y           and loop through previously deleted text
+
+-------------------- searching -------------------------
+C-r                 and type to search
+    repeat C-r to loop through results
+C-r C-r search last result
+C-g                 leave search and restore original line
