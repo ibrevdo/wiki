@@ -1,13 +1,11 @@
 My Wiki
 ============================================
 
-* [Home](md/home.md)
-* [Slackware](md/slackware.md)
-* [Linux](md/linux.md)
-* [Vim](md/vim.md)
-* [Programming](md/programming.md)
-* [Computing](md/computing.md)
-* [Interests](md/interests.md)
-* [Media](md/media.md)
----
-* [install](slackware/help/install.md)
+* [Home](w/home.md)
+* [Slackware](w/slackware.md)
+* [Linux](w/linux.md)
+* [Vim](w/vim.md)
+* [Programming](w/programming.md)
+* [Computing](w/computing.md)
+* [Interests](w/interests.md)
+* [Media](w/media.md)

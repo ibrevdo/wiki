@@ -5,7 +5,9 @@
 * [install dual boot](../slackware/help/install_dual_boot.md)
 * [upgdrade](../slackware/help/upgrade.md)
 * [sbopkg use](../slackware/help/sbopkg_use.md)
+
 ---
+
 * [my setup](../slackware/help/my_setup.md)
 * [liveslack](../slackware/help/liveslak.md)
 * [slackware info](../slackware/help/slackware.md)
