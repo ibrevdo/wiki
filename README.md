@@ -9,3 +9,5 @@ My Wiki
 * [Computing](.md/computing.md)
 * [Interests](.md/interests.md)
 * [Media](.md/media.md)
+---
+* [install](slackware/help/install.md)
