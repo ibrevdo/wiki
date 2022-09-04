@@ -24,3 +24,6 @@ Shopping
     * [ לקנות אותו בחנות Electric deal ]( http://www.electricdeal.co.il/product/טלויזיה-samsung-ua40j5500-led-‏40-‏אינטש-סמסונג?aff=Zap&aff_a=1 )
     * [ TV streamer ]( https://ru.aliexpress.com/item/KI-Plus-T2-S2-Smart-Android-TV-Box-Amlogic-S905-Quad-Core-64-bit-1GB-8GB/32773210000.html )
 
+### זרוע למסך מחשב
+* <https://ksp.co.il/web/cat/1925>
+* <https://www.amazon.com/VIVO-Monitor-Adjustable-Screens-STAND-V002/dp/B009S750LA/>

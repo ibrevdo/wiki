@@ -11,6 +11,7 @@ w / W                   go to start of next word
 e / E                   go to end of next word
 b / B                   go to back to start of previous mode
 f<char> / F<char>       go forward/back to next occurance of char
+; / ,                   continue forward/back to next occurance of char
 t<char> / T<char>       go till next/previous occurane of char
 0 / $                   jump to start / end of line
 gg / G                  go to start/end of file
@@ -19,6 +20,7 @@ gd                      jump to definition of word under cursor (first occurance
 C-6                     load previous previous buffer
 C-o / C-i               jump out / jump in
 C-] / C-t               jump to tag definition (in/out)
+gC-]                    jump to tag or show list of tags (if more than one)
 ( / )                   jump to previous / next sentence
 { / }                   jump to previous / next paragraph
 [[ / ]]                 jump to previous / next code block (first column has { )
@@ -33,6 +35,14 @@ zz                      place cursor in middle of screen
 zb                      place cursor at bottom of screen
 zt                      place cursor at top of screen
 
+searching for text inside the window
+/<pattern>              search for pattern
+*                       search word under cursor
+?<pattern>              search for pattern backwords
+#                       search word under cursor backwords
+n                       jump to next occurance of search result
+N                       jump to previous occurance of search result
+
 
 copying and pasting text
 ------------------------------------------------------
@@ -45,7 +55,7 @@ changing text
 i / a                   go to insert mode before/after cursor
 I / A                   go to insert mode at start / end of line
 c{motion}               cut text under motion and enter edit mode
-cc						cut whole line and start insert mode with smart indent
+cc                      cut whole line and start insert mode with smart indent
 d{motion}               delete text under motion
 dd                      delete entire line
 D                       delete till end of line
@@ -53,7 +63,7 @@ o / O                   insert new line after/before current and enter insert mo
 ={motion}               indent text
 ==                      indent current line
 </>{motion}             shift(indent) left/right
-<</>>					shift(indent) left/right whole line
+<</>>                   shift(indent) left/right whole line
 
 
 insert and completion mode
@@ -64,7 +74,7 @@ C-r{register}           insert content of register
 C-x C-y                 scroll down
 C-x C-e                 scroll up
 C-o                     execute single normal mode command and back to insert mode
-    ex: C-o zz
+                        example: C-o zz
 
 C-n                     complete next word 
 C-p                     complete previous word 
@@ -81,6 +91,7 @@ C-x C-n                 complete next word from current file
 C-x C-p                 complete prev word from current file
 C-x C-l                 comlete a whole line
 
+
 visual selection mode
 -------------------------------------------------------
 v                       start visual selection
@@ -89,49 +100,6 @@ C-v                     start column-wise visual seletion
 o                       move to other end of selection area
 y / d / c               yank / delete / change the selection
 
-windows
-------------------------------------------------------
-C-ws / C-wv             split horisontally/vertically and load current buffer
-:sp / :vsp              split horisontally/vertically and load current buffer
-:sp <file>              split horisontally and load file into a new window
-:sf	<file>				split horisontally and :find <file>					
-:enew                   load a new buffer in current window
-C-wn / :new / :vnew     slpit horisontally/vertically and load a new buffer
-C-wq / :close           close current window
-C-w<arrow>              go to window according to direction
-C-ww                    go to next window
-C-wp                    go to last used window
-C-w_                    set current window height to max
-C-w|                    set current window width to max
-C-w=                    make all windows equal size
-C-wx                    exchange locations of two windows
-C-wr                    rotate windows locations
-C-w H/J/K/L             move current window left/down/up/right
-:pclose					close preview window
-:resize <num>			set size of window
-:resize +/-<num>		increase/decrease size of window
-
-marks
-------------------------------------------------------
-"" / ``                 go to last position in file (line/cursor)
-". / `.                 go to last edit position in file (line/cursor)
-"0 / `0                 go to last edit position in file (line/cursor) after exiting vim
-`< / `>                 start / end of last visual selection
-ma                      set mark 'a' on current position
-"a / `a                 go to mark 'a' positon in file (line/cursor)
-mA                      set global mark 'A' on current position
-"A / `A                 go to mark 'A' positon globally (line/cursor)
-
-registers
-------------------------------------------------------
-"{register}command      the structure of command that uses register
-"ayy                    copy current line into register a                     
-"ap                     paste from register a
-""{command}             default register 
-"0                      yank register
-<C-r>{register}         paste contents of register in insert/command mode
-v{select text}"+y       select text and copy it into system clipboard (paste with C-v)
-"+p                     paste from system clipboard into vim
 
 other commands
 ------------------------------------------------------
@@ -145,6 +113,165 @@ g; / g,                 go to previous/next editing position
 gi                      go to previous editing position and enter insert mode
 gv                      select again last visual selection
 C-g                     show filename and location in the file
+C-z                     put vim in background and go to shell. run fg to get back into vim
+C-6                     jump to alternate file
+C-f                     enter command window. enables to search/edit previous commands and execute them
+
+
+command mode
+---------------------------------------------------------
+:<num>                  jump to a line number <num>
+:edit <file>            load <file> into buffer
+:w <file>               write changes to <file>
+:ls                     list all buffers.
+% #                     stand for :current file, alternate file
+:b <name> / :b <num>    go to buffer
+:bn / :bp               go to next / previous buffer
+:cd                     change current directory for vim
+:lcd                    change current directory for a window
+:cd %:h                 change current directory to a directory containing current file
+:e .                    open file view of current directory
+:find **/*name.c        find file by partial name recursively
+:!ls                    run shell command (ls in this case)
+:!gcc % && ./a.out      compile and run command
+:read !<cmd>            read output of shell command into current buffer
+:set <option>       
+:vert <cmd>             the window command will open in vertical split
+:tab <cmd>              the window command will open in new tab
+:bufdo <cmd>            run command on all open buffers
+:norm <cmd>             run command as the keys were pressed in normal mode
+:map                    show mapping keys
+:g/pattern              show all lines containg pattern
+:s/one/two/g            subsititude word 'one' with 'two' in current line
+:%s/one/two/g           subsititude word 'one' with 'two' in current file
+
+
+vim help browsing
+---------------------------------------------------------
+:help :command
+:help function()
+:help 'option'
+:help i_ctrl-a
+:helpgrep foo
+<C-]> / <C-t>           jump on an highlighted tag / jump back
+
+
+vimgrep
+------------------------------------------------------
+:vim /{pattern}/[g][j] {path}   g-find all occurances, j-dont jump to first result
+:vim /{pattern}/ src/**/*.h     search recursively in all header files under 'src' dir
+:vimgrep /pattern/ ##           search in arglist
+
+
+quickfix window
+---------------------------------------------------------
+:copen / :ccl           open/close quickfix window
+:cw                     open quickfix window if there any results (close it otherwise)
+:cn / :cp               go to next/prev error
+:cnf                    go to the first error in the next file
+:.cc                    go to current error
+:cdo <cmd>              execute command on all buffers in quickfix list
+
+
+windows (splits)
+------------------------------------------------------
+C-ws / C-wv             split horisontally/vertically and load current buffer
+:sp / :vsp              split horisontally/vertically and load current buffer
+:sp <file>              split horisontally and load file into a new window
+:sf <file>              split horisontally and :find <file>                 
+:new                    create new window split with empty buffer
+:enew                   load an empty buffer in current window
+:only                   close all windows except the current one
+C-wn / :new / :vnew     slpit horisontally/vertically and load a new buffer
+C-wq / :close           close current window
+C-w<arrow>              go to window according to direction
+C-ww                    go to next window
+C-wp                    go to last used window
+:windo <cmd>            execute <cmd> on all windows
+
+C-w]                    open new split and jump to tag definition
+C-wf                    open new split and jump to file under cursor
+
+C-wx                    exchange locations of two windows
+C-wr                    rotate windows locations
+C-w_                    set current window height to max
+C-w|                    set current window width to max
+C-w=                    make all windows equal size
+C-w H/J/K/L             move current window left/down/up/right
+:resize <num>           set size of window
+:resize +/-<num>        increase/decrease size of window
+
+:quit                   close current window (and vim if it the last one)
+:pclose                 close preview window
+
+
+marks
+------------------------------------------------------
+"" / ``                 go to last position in file (line/cursor)
+". / `.                 go to last edit position in file (line/cursor)
+"0 / `0                 go to last edit position in file (line/cursor) after exiting vim
+`< / `>                 start / end of last visual selection
+ma                      set mark 'a' on current position
+"a / `a                 go to mark 'a' positon in file (line/cursor)
+mA                      set global mark 'A' on current position
+"A / `A                 go to mark 'A' positon globally (line/cursor)
+
+
+registers
+------------------------------------------------------
+"{register}command      the structure of command that uses register
+"ayy                    copy current line into register a                     
+"ap                     paste from register a
+""{command}             default register 
+"0                      yank register
+<C-r>{register}         paste contents of register in insert/command mode
+v{select text}"+y       select text and copy it into system clipboard (paste with C-v)
+"+p                     paste from system clipboard into vim
+
+
+macro
+--------------------------------------------------------
+
+
+args list
+--------------------------------------------------------
+:args                   list current arglist
+:args **/*.py           populate args list with all python files found recursively
+:args `find *.md`       populate args with shell command
+:argadd %               add current buffer to arglist
+:n / :p                 go to next / prev arg file
+:first / :last          go to first / last arg file
+:vert sall              vertically split files in arglist
+:argdo %s/\a/*/ge       execute substitution command on every file in arglist
+:argdo update           save changes in all buffers in argslist
+:argdo edit!            undo last change in all buffers in argslist
+:argdo normal @a        execute macro a on every file in arglist
+:vimgrep /pattern/ ##   search in arglist
+
+
+tabs
+-------------------------------------------------------
+:tabnew <filename>      open new tab page. filename is optional
+:tabedit %              open current file in new tab
+:tabfind <filename>     find file and open it in new tab
+:tabclose               close current tab (or use :close to close the last window of the tab)
+:tabonly                close other tabs but current one
+:taball                 show each buffer in a tab
+:tabsplit               copy the current window(split) to a new tab
+Ctrl-wT                 move the current window(split) to a new tab
+Ctrl-wgf                open the file under cursor in new tab
+
+:tabs                   list all tabs
+:tabm 0                 move current tab to first
+:tabm                   move current tab to last
+
+gt,gT                   go to next/previous tab page (wraps)
+:tabn/tabp
+Ctrl-PgDn / Ctrl-PgUp
+:tabfirst/tablast       go to first/last tab
+
+:tab help <item>        opens the help is a new tab (this can work with any other command)
+
 
 folding
 ------------------------------------------------------
@@ -155,48 +282,23 @@ zM                      close all folds
 :set foldmethod=indent
 :set foldlevel=10
 
-vimgrep
-------------------------------------------------------
-:vim /{pattern}/[g][j] {path}  g-find all occurances, j-dont jump to first result
-:vim /{pattern}/ src/**/*.h  search recursively in all header files under 'src' dir
-
-quickfix window
----------------------------------------------------------
-:copen / :ccl           open/close quickfix window
-:cw                     open quickfix window if there any results (close it otherwise)
-:cn / :cp				go to next/prev error
-:cnf					go to the first error in the next file
-:.cc					go to current error
 
 diff mode
 ---------------------------------------------------------
-vimdiff <file1> <file2>	start vim in diff mode
-:diffthis				add current window to diff windows group
-:diffoff				disable diff mode on current window
-:diffoff!				disable diff mode on all windows
-]c						next diff
-[c						previous diff
-do						obtain current diff from other side
-:diffget				get current diff form other side (with range)
-dp						put current diff to other side
-:diffput				put current diff to other side (with range)
+vimdiff <file1> <file2> start vim in diff mode
+:diffthis               add current window to diff windows group
+:windo diffthis         diffmode for all windows
+:diffoff                disable diff mode on current window
+:diffoff!               disable diff mode on all windows
+]c                      next diff
+[c                      previous diff
+do                      obtain current diff from other side
+:diffget                get current diff form other side (with range)
+dp                      put current diff to other side
+:diffput                put current diff to other side (with range)
 
-command mode
----------------------------------------------------------
-:map                    show mapping keys
-:read !<cmd>            read output of shell command
-:!gcc % && ./a.out      compile and run command
-C-f                     enter command window. enables to search/edit previous commands and execute them
-:close                  close current window (command window too)
-:quit                   close current window (and vim if it the last one)
-:g/pattern				show all lines containg pattern
-:<num>					jump to a line number <num>
 
-vim help brousing
----------------------------------------------------------
-:help :command
-:help function()
-:help 'option'
-:help i_ctrl-a
-:helpgrep foo
-<C-]> / <C-t>           jump on an highlighted tag / jump back
+
+tricks
+----------------------------------------------------------
+:20vs .                 open 20-char-wide vertical slpit and load netrw file view

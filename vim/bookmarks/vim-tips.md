@@ -22,6 +22,8 @@
 * [tab settings in vim](https://arisweedler.medium.com/tab-settings-in-vim-1ea0863c5990)
 * [vim tabstop, softtabstop, expandtab](https://developpaper.com/vim-technique-explain-the-difference-between-tabstop-softtabstop-and-expandtab/)
 * [how to make netrw set current pwd](https://www.reddit.com/r/vim/comments/i3823u/how_to_make_netrw_set_current_pwd/)
+* [Using tab pages](https://vim.fandom.com/wiki/Using_tab_pages)
+* [Quick tips for using tab pages](https://vim.fandom.com/wiki/Quick_tips_for_using_tab_pages)
 * [Sessions: The vim feature you probably aren't using](https://bocoup.com/blog/sessions-the-vim-feature-you-probably-arent-using)
 * using tags in vim
 	* [using tags in vim](https://stackoverflow.com/questions/1054701/get-ctags-in-vim-to-go-to-definition-not-declaration)

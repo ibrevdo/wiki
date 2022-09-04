@@ -2,7 +2,7 @@
 
 1. run it as root `su -`
 
-* `/var/lib/SBo`	local repo
+* `/var/lib/sbopkg/SBo`	local repo
 
 ### other options
 * `sbopkg -r`				rsync local repo with SBo

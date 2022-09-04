@@ -43,7 +43,6 @@
 	* glibc <https://www.gnu.org/software/libc/manual/html_node/index.html>
 	* glibc wiki   <https://sourceware.org/glibc/wiki/HomePage>
 * GLib - GNOME C Library        <https://en.wikipedia.org/wiki/GLib>
-* Common libraries and data structures for C <https://github.com/tezc/sc>
 
 ## Linking
 * ldconfig

@@ -6,6 +6,7 @@
 * [copy and paste](https://www.seanh.cc/2020/12/27/copy-and-paste-in-tmux/)
 * [How can i search within the output of buffer of tmux](https://superuser.com/questions/231002/how-can-i-search-within-the-output-buffer-of-a-tmux-shell)
 * [How do I reorder tmux windows](https://superuser.com/questions/343572/how-do-i-reorder-tmux-windows)
+* [tmux session switch example](https://www.reddit.com/r/tmux/comments/vvqd0m/tmux_session_switcher/)
 
 ## configuration
 * [TrueColor in terminals](https://gist.github.com/XVilka/8346728)

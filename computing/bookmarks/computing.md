@@ -38,6 +38,7 @@
 * [Ben Eater](https://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA)
 * [Sebastian Lague](https://www.youtube.com/user/Cercopithecan)
 * [Shiffman - The coding train](https://www.youtube.com/user/shiffman)
+* [ivyl's blog](https://blog.hiler.eu/)
 
 ## People and projects
 

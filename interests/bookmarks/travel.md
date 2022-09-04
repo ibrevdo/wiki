@@ -20,11 +20,11 @@ Europe
 ### Switzerland
 * Bern (hebrew)           http://www.themarker.com/markerweek/1.1480611
 
-### Greece
-* Menalon trail           https://menalontrail.eu/
-
 ### Germany
 * http://www.bws-germanlingua.de/index.php?id=44
+
+### Italy
+* Milano <https://www.yesmilano.it/en/see-and-do/venues/navigli-district>
 
 ### Other
 * Venice, Scotland, Andalusia, India and Morocco
@@ -34,6 +34,32 @@ Europe
 * Edinburgh Festival Fringe <https://g.co/kgs/CGjZV9>
 * Canary islands - 360 view   <http://www.360-vr.net/tours/teide/teide.html>
 
+Tracks in Europe
+---------------------------------------
+### Scotland 
+* <https://www.westhighlandway.org/>
+
+
+### Switzerland
+* [Alps - sipurderech - ihiel martzbach](https://www.sipurderech.co.il/שוויץ/שלושה-שבועות-באלפים-הצרפתיים-והשוויצרים)
+
+### Greece
+* Menalon trail           https://menalontrail.eu/
+
+### Slovenia
+* [Triglav - sipurderech - Avi levi](https://www.sipurderech.co.il/סלובניה/שמורת-טריגלב-%28triglav%29-בסלובניה-לפני-תחילת-העונה)
+* [Triglav - sipurderech - Ofir Lupo](https://www.sipurderech.co.il/סלובניה/טריגלב-מאגם-בוהין-לפסגת-הטריגלב-וסיום-במויסטרנה)
+
+### Bulgaria
+* [Pirin rudopi - new age tracking](https://www.newagetrekking.com/post/מעורב-בולגרי)
+
+### Italy
+* <https://en.wikipedia.org/wiki/Via_ferrata>
+
+### More tracks
+* [Italy/Spain/Greece - sipurderech - shir ve bar](https://www.sipurderech.co.il/u/sjactbqgi)
+
+
 India
 ----------------------------------------
 * India map and links     http://www.incredibleindiatour.net/states/
@@ -41,6 +67,9 @@ India
 * Gujarat             https://en.wikipedia.org/wiki/Gujarat
 * [Cola Beach](https://www.tripadvisor.com/Attraction_Review-g306996-d1961535-Reviews-Cola_Beach-Canacona_South_Goa_District_Goa.html)
 * [Kudle Beach - Gokarna](https://www.tripadvisor.com/Attraction_Review-g651646-d3461829-Reviews-Kudle_Beach-Gokarna_Uttara_Kannada_District_Karnataka.html)
+* <http://kudleoceanfront.com/welcome/>
+* <https://en.wikipedia.org/wiki/Medu_vada>
+* <https://en.wikipedia.org/wiki/Puri_bhaji>
 
 South America
 -----------------------------------------

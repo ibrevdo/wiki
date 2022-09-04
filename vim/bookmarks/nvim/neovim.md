@@ -9,3 +9,4 @@
 
 ## configurations
 * <https://gitlab.com/Groctel/dotfiles/-/tree/main/files-common/.config/nvim>
+* <https://github.com/ivyl/vim-config/blob/master/lua/ivyl/plugins.lua>

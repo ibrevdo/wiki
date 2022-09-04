@@ -4,6 +4,9 @@ Jekyll is a framework that is used by github pages. When you enable a github pag
 
 A good example for such a site is : <https://libsigcplusplus.github.io/libsigcplusplus/>
 
+Another good example for a jekyll site is <https://github.com/lxqt/lxqt.github.io>. 
+This site is uses github pages for user/organization and is more complicated. The blog section can be found under `_posts` folder.
+
 Simple guide that explains how to create github pages site for an online repo: <https://github.com/tomcam/least-github-pages>
 
 ## Steps to achive simple github-pages site for a repo

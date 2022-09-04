@@ -1,8 +1,7 @@
-# Vim
+# Vim Info
 
 ---------------------------------
 ## Movement
-
 
 Jumps commands include: searches (and repetitions), substitutions, parenthesses jumping,
 paragraphs and sentences, locations inside window, opening another file
@@ -210,8 +209,6 @@ All window commands can be activated with `<C-w><C-<letter>>` or just `<C-w<lett
 * `@:`  repeate last Ex command
 * `C-r"` put yanked/deleted text into command line
 * `C-r/` put last search into command line
-
-## Tabs
 
 ## Sessions
 * `:mksession ~/.vim/sessions/mysession.vim`    create a session
@@ -438,18 +435,6 @@ grep - use on large amounts of files
 * `gb`      go to previously bookmarked directory
 * `u`       change to recently visited directory
 
------------------------------------
-## Nerd Tree shortcuts
-* `?`       toggle help menu
-* `o`       open a file in a new buffer or open/close direcory
-* `s`       open a file in a new split
-* `i`       open a file in a new horizontal split
-* `p`       go to parent direcory
-* `r`       refresh current direcory
-* `u`       move root directory one level up
-* `C`       change tree root to selected directory
-* `m`       open file system sub menu
-
 ## vim-unimpaired shortcuts
 * `[q` / `]q`   navigate up and down through the quickfix list
 * `[l` / `]l`   navigate up and down through the location list
@@ -475,11 +460,7 @@ grep - use on large amounts of files
 -----------------------------------
 
 ## Useful settings
-
-* set completeopt=menuone,noinsert
-* set autoindent
 * set ft=xml
-* set relativenumber
 
 ## Tips
 
@@ -510,32 +491,26 @@ grep - use on large amounts of files
 * `!./%`    execute current buffer with shell (a buffer must be saved as a file and set as executable)
 * `!!`      repeate the last shell command
 * `.!!`     write the result of last shell command in current line
-
 * Comment multiple lines
     1. Position a cursor at start of line where comment required
     2. `C-v` to enter to visual block and go down as needed
     3. `I` to enter insert mode, enter the comment `#` and ESC to normal mode
     4. to uncomment, do the same but instead entering insert mode, just press `x` to remove comments
-
 * Delete blank lines
     * `g/^$/d`
     * `:g`  will execute a command on lines which match a regex.
             The regex is 'blank line' and the command is `:d` (delete)
-
 * Delete all buffers except current
     * `:%bd|e#` %bd = delete all buffers. e# = open the last buffer for editing.
     * `command! BufOnly silent! execute "%bd|e#|bd#"`
-
 * Save file as a root
     * `w !sudo tee % > /dev/null`   put a content of current buffer into `%` (current file) using sudo
-
 * Find and replace in project wide
     1. Put all files of the project in arglist `:args *.cpp`
     2. Find all reqiured changes in the project `:vimgrep /expr/g ##`
     3. Qargs command puts all files from quicklist into arglist
     4. Substitude in all files `argdo %s/expr/str/ge`
     5. Save all files `:argdo w`
-
 * Switch between .c and .h file
     * switch from header to c : `:e %:r.cpp` and vice versa `:e %:r.h`
     * `map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>`
