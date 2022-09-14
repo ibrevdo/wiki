@@ -1,0 +1,19 @@
+"simple_words" : {
+    "es"          : "it",
+    "Ich"         : "I",
+    "Wir"         : "we",
+    "du"          : "you",
+    "Er / sie"    : "he/she",
+    "Sie / sie"   : "They (you)",
+    "Bin"         : "am",
+    "ist"         : "is",
+    "sind"        : "are",
+    "Mich"        : "me",
+    "Den / deine" : "your",
+    "seine"       : "his",
+    "ihr"         : "her",
+    "heute"       : "this/today",
+    "hier"        : "here",
+    "rechts"      : "right",
+    "links"       : "left"
+}

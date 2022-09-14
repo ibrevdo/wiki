@@ -1,0 +1,24 @@
+{ "question_and_connection_words" : 
+    {
+        "Was"       : "What",
+        "Wo"        : "Where",
+        "Wann"      : "When",
+        "Warum"     : "Why",
+        "Woher"     : "Where",
+        "Wer"       : "Who",
+        "Wie viel"  : "How much/many",
+        "Welche"    : "Which",
+        "Wie lange" : "How long",
+        "und"       : "and",
+        "aber"      : "but",
+        "oder"      : "or",
+        "am"        : "on",
+        "im"        : "in",
+        "um"        : "at",
+        "ins"       : "in",
+        "bis"       : "till",
+        "mit"       : "with",
+        "Ohne"      : "without",
+        "fur"       : "for"
+    }
+}

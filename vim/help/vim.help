@@ -1,26 +1,30 @@
 
----------------- Vim help ----------------------------
+-------------------- Vim help ----------------------------
+
+normal command structure
+-----------------------------------------------------
+[number][register]<command><text object or motion>
 
 motions
 ------------------------------------------------------
 h / j / k / l           move left/down/up/right in normal mode
 H / M / L               move cursor to highest/middle/lowest line
 
-%                       jump to matching bracket (),[],{} even if cursor is not on the brakcet
+%                       jump to matching bracket (),[],{} even if cursor is not on the bracket
 w / W                   go to start of next word
 e / E                   go to end of next word
 b / B                   go to back to start of previous mode
-f<char> / F<char>       go forward/back to next occurance of char
-; / ,                   continue forward/back to next occurance of char
-t<char> / T<char>       go till next/previous occurane of char
+f{char} / F{char}       go forward/back to next occurrence of char
+; / ,                   continue forward/back to next occurrence of char
+t{char} / T{char}       go till next/previous occurrence of char
 0 / $                   jump to start / end of line
 gg / G                  go to start/end of file
 gf                      jump to file under cursor
-gd                      jump to definition of word under cursor (first occurance in a file)
+gd                      jump to definition of word under cursor (first occurrence in a file)
 C-6                     load previous previous buffer
 C-o / C-i               jump out / jump in
 C-] / C-t               jump to tag definition (in/out)
-gC-]                    jump to tag or show list of tags (if more than one)
+gC-]                    jump to tag or show list of tags (if more than one) (same as: :tj)
 ( / )                   jump to previous / next sentence
 { / }                   jump to previous / next paragraph
 [[ / ]]                 jump to previous / next code block (first column has { )
@@ -28,7 +32,7 @@ gC-]                    jump to tag or show list of tags (if more than one)
 window scrolling
 C-b / C-f               whole page back/forward
 C-u / C-d               half page up/down
-C-y / C-e               one line up/down (explore higher Y vs expore extra)
+C-y / C-e               one line up/down (explore higher Y vs explore extra)
 
 window scrolling around the cursor
 zz                      place cursor in middle of screen
@@ -36,13 +40,27 @@ zb                      place cursor at bottom of screen
 zt                      place cursor at top of screen
 
 searching for text inside the window
-/<pattern>              search for pattern
+/{pattern}              search for pattern
 *                       search word under cursor
-?<pattern>              search for pattern backwords
-#                       search word under cursor backwords
-n                       jump to next occurance of search result
-N                       jump to previous occurance of search result
+?{pattern}              search for pattern backwards
+#                       search word under cursor backwards
+n                       jump to next occurrence of search result
+N                       jump to previous occurrence of search result
 
+text objects 
+-----------------------------------------------------
+the cursor can be at any position inside the text object
+for tags/programming constructs, the cursor can even be any position before the tag/construct
+
+iw, aw                  inner/outer word
+is, as                  inner/outer sentence (like '(' motion )
+ip, ap                  inner/outer paragraph (like '{' motion )
+
+inner/outer for programming constructs
+', ", `, ], }, )
+
+it, at                  inner/outer markup tag (.xml, .html)
+ii, ai                  inner/outer indent object
 
 copying and pasting text
 ------------------------------------------------------
@@ -62,8 +80,8 @@ D                       delete till end of line
 o / O                   insert new line after/before current and enter insert mode
 ={motion}               indent text
 ==                      indent current line
-</>{motion}             shift(indent) left/right
-<</>>                   shift(indent) left/right whole line
+< / >{motion}             shift(indent) left/right
+<< / >>                   shift(indent) left/right whole line
 
 
 insert and completion mode
@@ -89,14 +107,15 @@ Completions than can be
 called again to get effect of chain completion:
 C-x C-n                 complete next word from current file
 C-x C-p                 complete prev word from current file
-C-x C-l                 comlete a whole line
+C-x C-l                 complete a whole line
 
 
 visual selection mode
 -------------------------------------------------------
 v                       start visual selection
 V                       start line-wise visual selection 
-C-v                     start column-wise visual seletion
+C-v                     start column-wise visual selection
+gv                      reselect last visual selection
 o                       move to other end of selection area
 y / d / c               yank / delete / change the selection
 
@@ -116,10 +135,13 @@ C-g                     show filename and location in the file
 C-z                     put vim in background and go to shell. run fg to get back into vim
 C-6                     jump to alternate file
 C-f                     enter command window. enables to search/edit previous commands and execute them
+z=                      suggest spelling correction
 
 
 command mode
 ---------------------------------------------------------
+:<range><command><args> command-mode command structure
+
 :<num>                  jump to a line number <num>
 :edit <file>            load <file> into buffer
 :w <file>               write changes to <file>
@@ -127,23 +149,52 @@ command mode
 % #                     stand for :current file, alternate file
 :b <name> / :b <num>    go to buffer
 :bn / :bp               go to next / previous buffer
+:3,$bd                  delete all buffers numbered 3 or more
 :cd                     change current directory for vim
 :lcd                    change current directory for a window
 :cd %:h                 change current directory to a directory containing current file
 :e .                    open file view of current directory
 :find **/*name.c        find file by partial name recursively
-:!ls                    run shell command (ls in this case)
-:!gcc % && ./a.out      compile and run command
-:read !<cmd>            read output of shell command into current buffer
-:set <option>       
+:noh                    turn off search highlighting (till next search)
+:set <option>           for example:
+                        :set nu, :set hls, :set nohls, :set spell
+:set path               option path holds the paths which are used by various search commands (:find, :sf, gf, ..)
+:set path=.,,**         the path contains:  the dir of current file, current working dir, 
+                                            recursively all dirs under current working dir
+                        another example: .,,~/work/project/**   which means, similar but recursively under project path
+:version                print vim version and compile options
 :vert <cmd>             the window command will open in vertical split
 :tab <cmd>              the window command will open in new tab
 :bufdo <cmd>            run command on all open buffers
 :norm <cmd>             run command as the keys were pressed in normal mode
 :map                    show mapping keys
-:g/pattern              show all lines containg pattern
-:s/one/two/g            subsititude word 'one' with 'two' in current line
-:%s/one/two/g           subsititude word 'one' with 'two' in current file
+:colorscheme
+:make %<                run make command with current filename as target
+:!ls                    run shell command (ls in this case)
+:!gcc % -o %< && ./%<   compile current file in shell and run the exe
+:read !<cmd>            read output of shell command into current buffer
+
+:g/pattern              show all lines containing pattern (because p is the default command)
+                        (default range for g is whole file)
+:g/pattern/command      perform command on all lines containing pattern 
+:g!/pattern/command     perform command on all lines NOT containing the pattern
+examples:
+:g!/include/d           delete all lines that do not contain includes
+:v/include/d            same. v for inverse
+:g/^/pu =\"\n\"         put a new line at the start of each line
+:g/^\s*$/d              delete all blank lines in the file
+:g/include/m$           move all lines that contain includes to end of file
+:g/pattern/norm @q      run macro q on matching lines
+
+:s/one/two/g            substitute word 'one' with 'two' in current line
+                        (default range for s is current line)
+:%s/one/two/g           substitute word 'one' with 'two' in current file
+
+Ranges
+:.                      current line (that's the default range)
+:$                      last line of the file
+:%                      entire file
+:11,15                  lines 11 to 15. example: 11,15g/
 
 
 vim help browsing
@@ -158,7 +209,7 @@ vim help browsing
 
 vimgrep
 ------------------------------------------------------
-:vim /{pattern}/[g][j] {path}   g-find all occurances, j-dont jump to first result
+:vim /{pattern}/[g][j] {path}   g-find all occurrences, j-don't jump to first result
 :vim /{pattern}/ src/**/*.h     search recursively in all header files under 'src' dir
 :vimgrep /pattern/ ##           search in arglist
 
@@ -175,14 +226,14 @@ quickfix window
 
 windows (splits)
 ------------------------------------------------------
-C-ws / C-wv             split horisontally/vertically and load current buffer
-:sp / :vsp              split horisontally/vertically and load current buffer
-:sp <file>              split horisontally and load file into a new window
-:sf <file>              split horisontally and :find <file>                 
+C-ws / C-wv             split horizontally/vertically and load current buffer
+:sp / :vsp              split horizontally/vertically and load current buffer
+:sp <file>              split horizontally and load file into a new window
+:sf <file>              split horizontally and :find <file>                 
 :new                    create new window split with empty buffer
 :enew                   load an empty buffer in current window
 :only                   close all windows except the current one
-C-wn / :new / :vnew     slpit horisontally/vertically and load a new buffer
+C-wn / :new / :vnew     split horizontally/vertically and load a new buffer
 C-wq / :close           close current window
 C-w<arrow>              go to window according to direction
 C-ww                    go to next window
@@ -212,9 +263,9 @@ marks
 "0 / `0                 go to last edit position in file (line/cursor) after exiting vim
 `< / `>                 start / end of last visual selection
 ma                      set mark 'a' on current position
-"a / `a                 go to mark 'a' positon in file (line/cursor)
+"a / `a                 go to mark 'a' position in file (line/cursor)
 mA                      set global mark 'A' on current position
-"A / `A                 go to mark 'A' positon globally (line/cursor)
+"A / `A                 go to mark 'A' position globally (line/cursor)
 
 
 registers
@@ -275,9 +326,17 @@ Ctrl-PgDn / Ctrl-PgUp
 
 folding
 ------------------------------------------------------
-za                      toggle folding
-zR                      reveal all folds
-zM                      close all folds
+zc                      close a fold under cursor
+zC                      close a fold under cursor recursively
+
+za                      toggle folding under cursor
+zA                      toggle folding under cursor recursively
+
+zr                      reduces fold level throughout the buffer
+zm                      increases fold level throughout the buffer
+zR                      reveal all folds throughout the buffer
+zM                      close all folds throughout the buffer
+
 :set nofoldenable
 :set foldmethod=indent
 :set foldlevel=10
@@ -301,4 +360,17 @@ dp                      put current diff to other side
 
 tricks
 ----------------------------------------------------------
-:20vs .                 open 20-char-wide vertical slpit and load netrw file view
+:20vs .                 open 20-char-wide vertical split and load netrw file view
+:w !bash                run content of the buffer in bash. (or use python instead of bash)
+
+arithmetics with operation register
+in insert mode C-r= brings you to command line. Here you can run arithmetic command. and hit enter. 
+the result will be pasted on cursor location
+
+
+plugins
+==========================================================
+
+vim-tabular
+----------------------------------------------------------
+:Tabularize /|

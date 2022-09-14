@@ -1,0 +1,47 @@
+
+plugins to try
+==============================
+
+In use
+------------------------------
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-vinegar'
+Plug 'airblade/vim-gitgutter'
+Plug 'dense-analysis/ale'
+Plug 'will133/vim-dirdiff'
+
+General
+------------------------------
+Plug 'ackyshake/VimCompletesMe'
+Plug 'tmsvg/pear-tree'
+Plug 'vim.lion'
+Plug 'vim-sandwitch'
+Plug 'mbbill/undotree'
+Plug 'vimsneak'
+Plug 'clever-f'
+Plug 'unblevable/quick-scope'
+Plug 'takac/vim-hardtime'
+Plug 'liuchengxu/vim-which-key'
+Plug 'FastFold'
+
+Dev
+------------------------------
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'preservim/tagbar'
+Plug 'ivalkeen/vim-ctrlp-tjump'
+Plug 'derekwyatt/vim-fswitch'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'janko/vim-test'
+Plug 'tpope/vim-dispatch'	"TODO: understand is it needed?
+Plug 'tpope/vim-projectionist'
+
+colorschemes
+----------------------------
+Plug 'romainl/Apprentice'
+colorscheme wombat256mod
+colorscheme solarized8
+
+colorscheme gruvbox8_hard
+let g:gruvbox_italics = 0

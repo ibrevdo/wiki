@@ -1,0 +1,19 @@
+"verbs" : {
+    "sing"       : "sing",
+    "spiel"      : "play",
+    "jogg"       : "run",
+    "mach"       : "do",
+    "leb"        : "live",
+    "komm"       : "come",
+    "schwimm"    : "swim",
+    "koch"       : "cook",
+    "kost"       : "cost",
+    "zahl"       : "pay",
+    "Bestellen"  : "order",
+    "trink"      : "drink",
+    "Such"       : "Look for",
+    "Wandern"    : "hike",
+    "wart"       : "wait",
+    "dauer"      : "To take (to last)",
+    "wiederhole" : "repeat"
+}
