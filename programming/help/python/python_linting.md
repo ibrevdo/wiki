@@ -1,4 +1,4 @@
-# vim-python setup
+# Python linters and fixers
 
 ## Linting
 
@@ -28,7 +28,13 @@ max-line-length = 160
 ### Using ale for python linting
 * [let's have a pint of ale](https://dmerej.info/blog/post/lets-have-a-pint-of-vim-ale/)
 
-## Advices for python development (from reddit)
+ale python linters:
+* bandit, cspell, flake8, flakehell, jeditls, mypy, prospector, pycodestyle, pydocstyle, pyflakes, pylama, pylint, pylsp, pyre, pyright, unimport, vulture
+
+ale python fixers:
+* autoflake, autoimport, autopep8, black, isort, pyflyby, remove_trailing_lines, reorder-python-imports, trim_whitespace, yapf
+
+## Advices for python development with Vim (from reddit)
 ```
 You don't need CoC or YCM for autocompletion.
 

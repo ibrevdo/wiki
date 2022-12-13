@@ -1,0 +1,11 @@
+# Favorite entries from Alienbob's blog 
+* 2022-02-17 [Cloud Server articles](https://alien.slackbook.org/blog/cloud-server/)
+* 2021-05-20 [How I setup Apache for slackware.nl](https://alien.slackbook.org/blog/how-i-setup-apache-for-slackware-nl/)
+* 2021-03-14 [Sync and share your (Chomium and more) brouser data among all your computers](https://alien.slackbook.org/blog/sync-and-share-your-chromium-and-more-browser-data-among-all-your-computers/)
+* 2021-03-08 [Howto: install MongoDB on Slackware](https://alien.slackbook.org/blog/howto-install-mongodb-on-slackware/)
+* 2021-03-04 [How to 'un-google' your Chromium browser experience](https://alien.slackbook.org/blog/how-to-un-google-your-chromium-browser-experience/)
+* 2020-06-24 [Configuring slackware for use a daw](https://alien.slackbook.org/blog/configuring-slackware-for-use-as-a-daw/)
+* 2017-12-16 [Using your slackware to control your Android](https://alien.slackbook.org/blog/using-your-slackware-to-control-your-android/)
+* 2017-10-25 [Netserf a lightweight brouser works on frame buffer too](https://alien.slackbook.org/blog/netsurf-a-lightweight-browser-works-on-the-framebuffer-too/) 
+* 2019-10-27 [Using Let's Encrypt to Secure your Slackware webserver with HTTPS](https://alien.slackbook.org/blog/using-letsencrypt-to-secure-your-slackware-webserver-with-https/)
+* 2016-06-10 [Ten years of SlackBuild.org](https://alien.slackbook.org/blog/ten-years-of-slackbuilds-org/)

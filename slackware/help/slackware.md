@@ -48,6 +48,20 @@ The following files are responsible for the network init.
     * slackpkg      - a standard tool to install packages from an official repository
     * an official repository to use: `/etc/slackpkg/mirrors`
     * list of installed packages: `/var/log/packages`
+    * Example: 
+`grep pip3 -r /var/log/packages` find a file by name in currently installed packages 
+    * Note: actally it is an old location. New location is:
+```
+/var/lib/pkgtools/packages  # сведения об установленных пакетах
+/var/lib/pkgtools/scripts   # послеустановочные сценарии пакетов
+/var/lib/pkgtools/setup     # сценарии для настройки из установщика
+
+and for removed things the location is hare:
+/var/log/pkgtools/removed_packages
+/var/log/pkgtools/removed_scripts
+
+```
+
 
 * slackpkgplus  - a plugin for slackpkg that alows to install packages from additional repositories as well
     * configuration file: `etc/slackpkg/slackpkgplus.conf`

@@ -52,11 +52,6 @@
 * [SlackBuilds.org - blas](https://slackbuilds.org/repository/14.2/libraries/blas/)
 * [SlackBuilds.org - octave](https://slackbuilds.org/repository/14.2/academic/octave/)
 
-### Games
-* [freecol](http://www.freecol.org/) (needs Java 8)
-* [Diablo 3](http://alien.slackbook.org/blog/installing-diablo-3-on-slackware-linux/)
-* Half life                 https://www.linuxquestions.org/questions/showthread.php?p=5565292#post5565292
-
 ## To install
 
 * Sbopkg                    https://blog.jeaye.com/2015/07/09/sbopkg/

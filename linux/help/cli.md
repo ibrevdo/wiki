@@ -16,6 +16,8 @@
 	* `find /opt/lampp/htdocs -type f -exec chmod 644 {} \;`
 *  Calculate md5 checksum of a directory
 	* `find "$path" -type f -print0 | sort -z | xargs -r0 md5sum | md5sum`
+* find pattern in specific file type recursively
+    * `find . -name *.md -exec grep "template" {} \; -print`
 
 ### grep
 1. how to search more than one expression

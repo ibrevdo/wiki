@@ -50,6 +50,8 @@
 * [Everything I know](https://wiki.nikiv.dev/sharing/my-workflow)
 * [w0rp](https://w0rp.com/blog/)
 * [noahfrederick](https://noahfrederick.com/)
+* an example of github page with ability to edit files
+<https://meleu.github.io/my-notes/>
 
 ### Nice githubs
 * dotfiles + install script <https://github.com/maguec/dotfiles>
@@ -71,6 +73,12 @@
 * [helix-editor](https://github.com/helix-editor/helix)
 
 ## Computing links
+
+### Dockers (with syncthing)
+* https://docs.syncthing.net/users/contrib.html
+* Site that has docker images? https://www.linuxserver.io/
+* syncthing : Tray app for dolphin and plasma https://github.com/Martchus/syncthingtray
+
 
 ### Web-servers
 * [TOR](http://coexistentrandom.wordpress.com/2011/11/04/a-geekster-guide-to-the-deep-web/)
@@ -106,6 +114,12 @@
 * [zettelkasten technique](https://zettelkasten.de/introduction/)
     * [mickael-menu/zk - plugin for zk](https://github.com/mickael-menu/zk)
     * [favorite note taking plugin](https://www.reddit.com/r/neovim/comments/ro518g/your_favourite_note_takingtodo_plugin_and_reason/)
+* pomodoro timer written in bash <https://github.com/jsspencer/pomo>
+
+### Gimp tutorials
+* <https://docs.gimp.org/en/index.html>
+* <https://www.youtube.com/watch?v=2EPIUyFJ4ag>
+* <https://www.youtube.com/watch?v=_z9cFpwak9c>
 
 ### mps-youtube - terminal based youtube player and downloader
 * [mps-youtube](https://github.com/mps-youtube/mps-youtube)
@@ -116,6 +130,7 @@
 * People
   * [David harel](http://he.wikipedia.org/wiki/דוד_הראל)
   * [Marvin Minsky](https://en.wikipedia.org/wiki/Marvin_Minsky)
+
 ---
 * [Draw.io](https://www.youtube.com/watch?v=-0qxOIP05tw)
 * [How to use Handbrake 1.1.1 - Exporting Video](https://www.youtube.com/watch?v=wm8IBHTmELI)

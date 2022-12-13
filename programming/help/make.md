@@ -62,7 +62,7 @@ clean:
 
 --------------------------------
 ## Make links
-
+* [Makefile, header dependencies](https://stackoverflow.com/questions/2394609/makefile-header-dependencies)
 * [GNU make documentation](https://www.gnu.org/software/make/manual/html_node/index.html)
 * [Things you should know about make](http://www.alexeyshmalko.com/2014/7-things-you-should-know-about-make)
 * [Subdirs in makefile](https://stackoverflow.com/questions/4036191/sources-from-subdirectories-in-makefile)

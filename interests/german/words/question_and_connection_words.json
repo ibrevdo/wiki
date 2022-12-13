@@ -1,6 +1,7 @@
 { "question_and_connection_words" : 
     {
         "Was"       : "What",
+        "Wie"       : "What",
         "Wo"        : "Where",
         "Wann"      : "When",
         "Warum"     : "Why",
@@ -12,13 +13,15 @@
         "und"       : "and",
         "aber"      : "but",
         "oder"      : "or",
-        "am"        : "on",
-        "im"        : "in",
+        "am"        : "on <date>",
+        "im"        : "in <location>",
         "um"        : "at",
-        "ins"       : "in",
+        "ins"       : "in the",
         "bis"       : "till",
         "mit"       : "with",
         "Ohne"      : "without",
-        "fur"       : "for"
+        "fur"       : "for",
+        "zu"        : "at",
+        "zum"       : "to"
     }
 }

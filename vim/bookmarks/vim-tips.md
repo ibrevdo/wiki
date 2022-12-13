@@ -8,6 +8,7 @@
 * [quickfix and location lists](https://freshman.tech/vim-quickfix-and-location-list/)
 * [vimregex tutorial](http://vimregex.com/)
 * [vim, switching between files rapidly using vanilla Vim (no plugins)](https://stackoverflow.com/questions/16082991/vim-switching-between-files-rapidly-using-vanilla-vim-no-plugins)
+* [best vim tips](http://zzapper.co.uk/vimtips.html)
 * [recomendations](https://www.vi-improved.org/recommendations/)
 * [noahfrederick - do family](https://noahfrederick.com/log/vim-do-commands)
 * [getting faster in vim](https://www.reddit.com/r/vim/comments/m330z4/getting_faster)
@@ -25,11 +26,6 @@
 * [Using tab pages](https://vim.fandom.com/wiki/Using_tab_pages)
 * [Quick tips for using tab pages](https://vim.fandom.com/wiki/Quick_tips_for_using_tab_pages)
 * [Sessions: The vim feature you probably aren't using](https://bocoup.com/blog/sessions-the-vim-feature-you-probably-arent-using)
-* using tags in vim
-	* [using tags in vim](https://stackoverflow.com/questions/1054701/get-ctags-in-vim-to-go-to-definition-not-declaration)
-	* [using tag in vim 2](https://stackoverflow.com/questions/41796034/vim-tnext-doesnt-move-cursor-to-the-next-tag)
-	* [Browsing program with tags](https://vim.fandom.com/wiki/Browsing_programs_with_tags)
-	* [romainl explain about gd, gD, tags and include-search](https://www.reddit.com/r/vim/comments/78u0av/why_gd_searches_instead_of_going_to_the/)
 * [vim8 terminal](http://yazgoo.github.io/blag/neovim/terminal/multiplexer/tmux/2017/11/29/neovim-one-week-without-tmux.html)
 * [Vim has a Terminal Mode](https://gist.github.com/mahemoff/8967b5de067cffc67cec174cb3a9f49d)
 * vim script
@@ -68,6 +64,19 @@
 * [The Viminator game](https://www.theviminator.com/)
 * [vanilla-vim-config](https://opensource.com/article/21/12/vanilla-vim-config)
 * [your replacement for popular plugins](https://www.reddit.com/r/vim/comments/7iy03o/you_aint_gonna_need_it_your_replacement_for/)
+* [How to map Enter to custom command EXCEPT in quick fix](https://vi.stackexchange.com/questions/3127/how-to-map-enter-to-custom-command-except-in-quick-fix)
+
+### using tags in vim
+```
+set tags=./tags;
+This will look in the current directory for "tags",
+and work up the tree towards root until one is found.
+IOW, you can be anywhere in your source tree instead of just the root of it.
+```
+* [using tags in vim](https://stackoverflow.com/questions/1054701/get-ctags-in-vim-to-go-to-definition-not-declaration)
+* [using tag in vim 2](https://stackoverflow.com/questions/41796034/vim-tnext-doesnt-move-cursor-to-the-next-tag)
+* [Browsing program with tags](https://vim.fandom.com/wiki/Browsing_programs_with_tags)
+* [romainl explain about gd, gD, tags and include-search](https://www.reddit.com/r/vim/comments/78u0av/why_gd_searches_instead_of_going_to_the/)
 
 ### find and replace tips
 * [vim search find replace](https://thevaluable.dev/vim-search-find-replace/)
@@ -90,60 +99,29 @@
 * [Alexey Samoshkin: fzf - command line fuzzy finder](https://www.youtube.com/watch?v=qgG5Jhi_Els)
 * [boost your programming productivity with fuzzy finder](https://betterprogramming.pub/boost-your-command-line-productivity-with-fuzzy-finder-985aa162ba5d)
 
-### C / C++ development tips
-* [using vim for C++ development](https://idie.ru/posts/vim-modern-cpp/)
-* [vim configuration for Linux kernel development](https://stackoverflow.com/questions/33676829/vim-configuration-for-linux-kernel-development)
-* [dane-bulat setting up build system for c++](https://dane-bulat.medium.com/vim-setting-up-a-build-system-and-code-completion-for-c-and-c-eb263c0a19a1)
-* [Configuring Vim for C++](https://stackoverflow.com/questions/4237817/configuring-vim-for-c)
-* [Vim configuration for Linux kernel development](https://stackoverflow.com/questions/33676829/vim-configuration-for-linux-kernel-development)
-* [romainl] [Ideal C Setup for Vim](https://stackoverflow.com/questions/14533877/ideal-c-setup-for-vim)
-* [Minimal .vimrc for C/C++ developers · GitHub](https://gist.github.com/rocarvaj/2513367)
-* [Code completion for C++ in Vim with OmniCppComplete](https://web.archive.org/web/20160411015911/http://design.liberta.co.za/articles/code-completion-intellisense-for-cpp-in-vim-with-omnicppcomplete/)
-* [C++ code completion | Vim Tips Wiki | Fandom](https://vim.fandom.com/wiki/C%2B%2B_code_completion)
-* [GitHub - xavierd/clang_complete: Vim plugin that use clang for completing C/C++ code.](https://github.com/xavierd/clang_complete)
-* [How do I run a C program from VIM?](https://stackoverflow.com/questions/2627886/how-do-i-run-a-c-program-from-vim)
-* [Setting up vim for C++: An IDE like experience with coc!](https://www.youtube.com/watch?v=ViHgyApE9zM)
-* [how to setup tags properly](https://www.reddit.com/r/vim/comments/d77t6j/guide_how_to_setup_ctags_with_gutentags_properly/)
-* [ctags for c standard library](https://stackoverflow.com/questions/1632633/ctags-does-not-parse-stdio-h-properly)
-* Working with tags:
-```
-set tags=./tags;/
-This will look in the current directory for "tags",
-and work up the tree towards root until one is found.
-IOW, you can be anywhere in your source tree instead of just the root of it.
-```
-* [vim-mucomplete: cpp member auto completion](https://github.com/lifepillar/vim-mucomplete/wiki/Cpp--member-auto-completion)
-* [Vim:Setting up a build system and code completion for c/c++](https://dane-bulat.medium.com/vim-setting-up-a-build-system-and-code-completion-for-c-and-c-eb263c0a19a1)
-* [Using Vim as C/C++ IDE](https://www.alexeyshmalko.com/2014/using-vim-as-c-cpp-ide/)
-* [vim and haskell](https://0xd34df00d.me/posts/2021/10/vim-and-haskell-in-2021.html)
-* [signature of c function via ale](https://www.reddit.com/r/vim/comments/jhqzsv/signature_help_via_ale/)
 
----
-* asyncrun.vim plugin
-	* [skywind3000/asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)
-	* [Better way for cpp dev in Vim8](https://github.com/skywind3000/asyncrun.vim/wiki/Better-way-for-C-and-Cpp-development-in-Vim-8)
-	* [jdhao-vim asynchronous command run](https://jdhao.github.io/2019/12/09/vim_asynchronous_command_run/)
-	* [skywind3000/asynctasks.vim](https://github.com/skywind3000/asynctasks.vim)
+## Development in vim
+* [romainl/vim-devdocs look up keywords on devdocs.io](https://github.com/romainl/vim-devdocs)
 
 ### Python development
 * [vim script tutorial for python devs](https://gist.github.com/yegappan/16d964a37ead0979b05e655aa036cad0)
 * [vim/python documentation workflow](https://www.reddit.com/r/vim/comments/vaqk1a/vimpython_documentation_workflow/)
 * check out vim-slime plugin <https://github.com/jpalardy/vim-slime>
 * [jdhao - completion of python with deoplete](https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/)
+* [vim and haskell](https://0xd34df00d.me/posts/2021/10/vim-and-haskell-in-2021.html)
 
 ## Additional howtos, videos and articles about vim
 * `@toread` [notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/) 
 * [Plugin showcase:Ctrl-P](https://www.youtube.com/watch?v=8XGueeQJsrA)
 * [vimfromscratch - useful vim plugins you havent heard of](https://www.vimfromscratch.com/articles/useful-vim-plugins-you-havent-heard-of/)
 * [vim-sandwich not surround.vim](https://joereynoldsaudio.com/2020/01/22/vim-sandwich-is-better-than-surround.html)
-	<br> little fix on previous <https://www.reddit.com/r/neovim/comments/kgszer/which_is_the_best_snippet_engine_and_why/>
+* [which is the best snippet engine](https://www.reddit.com/r/neovim/comments/kgszer/which_is_the_best_snippet_engine_and_why/)
 * [vim snippets engins](https://vi.stackexchange.com/questions/7466/what-is-the-difference-between-the-vim-snippets-plugins)
 * UltiSnips [sirvir/UltiSnips](https://github.com/sirver/UltiSnips)
 	<br> https://www.sirver.net/blog/2012/01/08/second-episode-of-ultisnips-screencast>
 	<br> <http://vimcasts.org/episodes/ultisnips-visual-placeholder/>
 * [habr.com/ru/hub/vim](https://habr.com/ru/hub/vim/)
 * [Nick Janetakis howto videos](https://www.youtube.com/playlist?list=PL-v3vdeWVEsXo87wHeVSP_x1KTX4G1l8Y)
-* [Find and replace Text in 1 or more files using vim, fzf and ripgrep (Nick Janetakis) ](https://www.youtube.com/watch?v=fP_ckZ29gbs&list=PL-v3vdeWVEsXo87wHeVSP_x1KTX4G1l8Y&index=22)
 * `@toread` [Top-notch VIM markdown live previews with no plugins, just unix](https://www.reddit.com/r/vim/comments/8asgjj/topnotch_vim_markdown_live_previews_with_no/)
 * `@towatch` [DIY quality of life improvements - Anton Kastinsky - Vimconf 2021](https://www.youtube.com/watch?v=pkyurqHhlXI)
 * [minimal vimrc](https://jamesdixon.dev/posts/a-minimal-vimrc/)

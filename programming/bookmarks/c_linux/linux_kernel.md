@@ -11,7 +11,7 @@
 * <https://devarea.com/labs/#.XchNbOZfiV5>
 
 ## Kernel
-
+* [lxr.linux.no - The linux cross reference](http://lxr.linux.no/)
 * Linux kernel on wikipedia     <https://en.wikipedia.org/wiki/Linux_kernel>
 * Life cycle of process     <http://www.linux-tutorial.info/modules.php?name=MContent&pageid=84>
 * Linux kernel driver writing tutorial  2008 Greg Kroah-Hartman

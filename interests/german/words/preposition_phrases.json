@@ -1,12 +1,14 @@
 "preposition_words" : {
     "nie"         : "never",
     "zu"          : "too",
+    "da"          : "there",
     "Da druben"   : "Over there",
     "sehr"        : "very",
     "In der nAhe" : "Near by",
     "auch"        : "also",
     "nicht"       : "no",
     "oft"         : "often",
+    "noch"        : "yet, even, just",
     "manchmal"    : "sometimes",
     "jetzt"       : "now",
     "wirklich"    : "really",
@@ -16,9 +18,9 @@
     "nur"         : "only",
     "nach"        : "to",
     "getrennt"    : "separately",
-    "Dann"        : "then",
+    "dann"        : "then",
     "zusammen"    : "together",
-    "Geradeaus"   : "Straight ahead",
-    "Circa"       : "about",
-    "Zum"         : "to"
+    "geradeaus"   : "Straight ahead",
+    "circa"       : "about",
+    "zum"         : "to"
 }

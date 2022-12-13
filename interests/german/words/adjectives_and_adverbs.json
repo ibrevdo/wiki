@@ -1,7 +1,8 @@
 "adjectives and adverbs" : {
     "geoffnet"  : "open",
     "heiss"     : "hot",
-    "schlecht " : "bad",
+    "schlecht"  : "bad",
+    "teuer"     : "expensive",
     "bequem"    : "comfortable",
     "sauber"    : "clean",
     "hell"      : "bright",
@@ -11,10 +12,13 @@
     "spat"      : "late",
     "einfach"   : "easy",
     "schnell"   : "fast",
-    "schwer"    : "difficult",
+    "schwer"    : "heavy, difficult",
+    "fruh"      : "early",
     "bisschen"  : "little",
     "toll"      : "great",
     "suS"       : "sweet",
-    "storniern" : "cancel",
+    "richtig"   : "correct",
+    "leider"    : "unfortunately",
+    "verboten"  : "forbidden",
     "fault aus" : "Is canceled"
 }

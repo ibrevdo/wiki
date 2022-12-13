@@ -130,6 +130,7 @@
 * [prabirshrestha/vim-lsp](https://github.com/prabirshrestha/vim-lsp)
 * [rhysd/vim-lsp-ale](https://github.com/rhysd/vim-lsp-ale)
 * [LanguageClient-neovim](https://github.com/autozimu/LanguageClient-neovim)
+* [will133/vim-dirdiff](https://github.com/will133/vim-dirdiff)
 
 ### Other
 * [HiPhish/info.vim: Browse info files from Vim](https://github.com/HiPhish/info.vim)

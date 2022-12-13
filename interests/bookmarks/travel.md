@@ -10,15 +10,22 @@ Blogs - World travel photos and videos
 * В Пути Заметки путешественницы          http://vputi-nk.blogspot.com/
 * Firefly connection                      https://fireflyconnection.wordpress.com/
 * <https://zoxexivo.com/ru/>
+* exit ticket when traveling to East countries https://tomlandau.com/guide/exit-ticket/
 
 Europe
 ----------------------------------
 
 ### London
-* afternoon tea bus       https://london.b-bakery.com/afternoon-tea-london/afternoon-tea-bus-london-tour/
+* afternoon tea bus <https://london.b-bakery.com/afternoon-tea-london/afternoon-tea-bus-london-tour/>
 
 ### Switzerland
-* Bern (hebrew)           http://www.themarker.com/markerweek/1.1480611
+* Bern (hebrew) <http://www.themarker.com/markerweek/1.1480611>
+
+### Belguim
+* Nice hotel in Charleroi - Novotel Charleroi Centre
+
+### Austria
+* Austria - Wachau Valley near Vien <https://thetwirlingtraveler.nl/cycling-in-the-wachau-valley/>
 
 ### Germany
 * http://www.bws-germanlingua.de/index.php?id=44

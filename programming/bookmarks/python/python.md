@@ -59,14 +59,18 @@
 * [Learn online interactively](http://www.learnpython.org/en/Welcome)
 
 ## Python tutorials
+* [How to use generators and yield in Python](https://realpython.com/introduction-to-python-generators/)
 * [small parts of python built in functionality you might overlook](http://freeprogrammersblog.vhex.net/post/small-parts-of-python-builtins-functionality-you-might-overlook/1)
 * [python design patterns collection](https://github.com/faif/python-patterns)
 * [Server-side scripting](http://www.pythonschool.net/server-side-scripting/introduction-to-server-side-scripting)
 * [Python as a web scripting language](http://stackoverflow.com/questions/4752574/python-as-a-web-scripting-language)
+* [Use black, mypy, and pylint to make your Python code more professional](https://lynn-kwong.medium.com/use-black-mypy-and-pylint-to-make-your-python-code-more-professional-b594512f4362)
+* [Python typing and validation with mypy and pydanatic](https://lynn-kwong.medium.com/python-typing-and-validation-with-mypy-and-pydantic-a2563d67e6d)
 
 ### Video tutorials
 * `@towatch` [James Powell: So you want to be a Python expert?](https://www.youtube.com/watch?v=cKPlPJyQrt4)
 * `@towatch` [What does it take to be an expert at python](https://www.youtube.com/watch?v=7lmCu8wz8ro)
+* Corey Schafer tutorials <https://www.youtube.com/@coreyms>
 * George Hotz Programming livecoding SLAM twichslam <https://www.youtube.com/watch?v=7Hlb8YX2-W8>
 * [Алгоритмы на Python 3. Лекция №1](https://www.youtube.com/watch?v=KdZ4HF1SrFs)
 * [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html)

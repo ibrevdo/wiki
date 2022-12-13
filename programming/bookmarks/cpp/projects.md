@@ -12,6 +12,9 @@
 	* [code](https://github.com/edghyhdz/silver-sniffle)
 	* [remarks on this project](https://www.reddit.com/r/programming/comments/m9qhlr/oc_terminal_tcp_chat_with_encryption_end_to_end_c/)
 
+* cpp project that uses makefile and .clang-format file
+<https://github.com/RayZ0rr/SymlinkPlusPlus>
+
 ## Projects by categories
 
 From here: [awesome-cpp](https://github.com/fffaraz/awesome-cpp) - 
@@ -26,6 +29,14 @@ a curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny
 
 * [Maximilian](https://github.com/micknoise/Maximilian) (13 devs)
 <br> C++ Audio and Music DSP Library
+
+### Networking
+* [zpl-c/enet](https://github.com/zpl-c/enet)
+<br> ENet - reliable UDP networking library (16 devs, C)
+
+### Radio projects
+* [gprx](https://github.com/gqrx-sdr/gqrx) (81 devs)
+<br> Software defined radio receiver powered by GNU Radio and Qt
 
 ### Encryption projects
 * [tiny-AES-c](https://github.com/kokke/tiny-AES-c) (19 devs)

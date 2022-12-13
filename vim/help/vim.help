@@ -24,6 +24,7 @@ gd                      jump to definition of word under cursor (first occurrenc
 C-6                     load previous previous buffer
 C-o / C-i               jump out / jump in
 C-] / C-t               jump to tag definition (in/out)
+g]                      show list of tags under cursor
 gC-]                    jump to tag or show list of tags (if more than one) (same as: :tj)
 ( / )                   jump to previous / next sentence
 { / }                   jump to previous / next paragraph
@@ -123,7 +124,7 @@ y / d / c               yank / delete / change the selection
 other commands
 ------------------------------------------------------
 .                       redo last editing command
-:                       enter command mode
+:                       enter command-line mode
 r                       replace one char
 u                       undo last editing
 C-r                     redo
@@ -134,13 +135,12 @@ gv                      select again last visual selection
 C-g                     show filename and location in the file
 C-z                     put vim in background and go to shell. run fg to get back into vim
 C-6                     jump to alternate file
-C-f                     enter command window. enables to search/edit previous commands and execute them
 z=                      suggest spelling correction
 
 
-command mode
+command-line mode
 ---------------------------------------------------------
-:<range><command><args> command-mode command structure
+:<range><command><args> command-line mode command structure
 
 :<num>                  jump to a line number <num>
 :edit <file>            load <file> into buffer
@@ -149,6 +149,7 @@ command mode
 % #                     stand for :current file, alternate file
 :b <name> / :b <num>    go to buffer
 :bn / :bp               go to next / previous buffer
+:tn / :tp               jump to tag under cursor / jump back
 :3,$bd                  delete all buffers numbered 3 or more
 :cd                     change current directory for vim
 :lcd                    change current directory for a window
@@ -174,27 +175,44 @@ command mode
 :!gcc % -o %< && ./%<   compile current file in shell and run the exe
 :read !<cmd>            read output of shell command into current buffer
 
-:g/pattern              show all lines containing pattern (because p is the default command)
-                        (default range for g is whole file)
 :g/pattern/command      perform command on all lines containing pattern 
+                        (default range for g is whole file)
 :g!/pattern/command     perform command on all lines NOT containing the pattern
 examples:
+:g/href                 show all lines containing 'href' (because p is the default command)
+:g/^\s*$/d              delete all blank lines in the file
 :g!/include/d           delete all lines that do not contain includes
 :v/include/d            same. v for inverse
 :g/^/pu =\"\n\"         put a new line at the start of each line
-:g/^\s*$/d              delete all blank lines in the file
 :g/include/m$           move all lines that contain includes to end of file
 :g/pattern/norm @q      run macro q on matching lines
 
 :s/one/two/g            substitute word 'one' with 'two' in current line
                         (default range for s is current line)
 :%s/one/two/g           substitute word 'one' with 'two' in current file
+:%s/.*\(<a.*<\/a>\).*/\1/ leave only first match in every line.
+                        \0 is whole match
+                        \1 is first match. you need to specify it by parentheses 
+                        and escaped backslash: \(pattern of first match\)
 
 Ranges
 :.                      current line (that's the default range)
 :$                      last line of the file
 :%                      entire file
 :11,15                  lines 11 to 15. example: 11,15g/
+
+
+command-line shortcuts
+---------------------------------------------------------
+C-b                     go to start of the line
+C-e                     go to end of the line
+S-left                  back one word
+S-right                 forward one word
+C-w                     delete one word back
+C-u                     delete back till start of the line
+C-f                     enter command window. enables to search/edit previous commands and execute them
+C-c/:q                  exit command window
+<Cr>                    execute command and exit
 
 
 vim help browsing
@@ -240,8 +258,9 @@ C-ww                    go to next window
 C-wp                    go to last used window
 :windo <cmd>            execute <cmd> on all windows
 
-C-w]                    open new split and jump to tag definition
 C-wf                    open new split and jump to file under cursor
+C-w]                    open new split and jump to tag definition
+C-w}                    open tag definition in a prevew window
 
 C-wx                    exchange locations of two windows
 C-wr                    rotate windows locations
@@ -275,7 +294,7 @@ registers
 "ap                     paste from register a
 ""{command}             default register 
 "0                      yank register
-<C-r>{register}         paste contents of register in insert/command mode
+<C-r>{register}         paste contents of register in insert/command-line mode
 v{select text}"+y       select text and copy it into system clipboard (paste with C-v)
 "+p                     paste from system clipboard into vim
 
@@ -326,20 +345,28 @@ Ctrl-PgDn / Ctrl-PgUp
 
 folding
 ------------------------------------------------------
-zc                      close a fold under cursor
-zC                      close a fold under cursor recursively
+zo                      open one fold under cursor
+zO                      open all folds under cursor recursively
+zc                      close one fold under cursor
+zC                      close all folds under cursor recursively
+zj,zk                   move down/up to next fold
 
 za                      toggle folding under cursor
 zA                      toggle folding under cursor recursively
 
-zr                      reduces fold level throughout the buffer
-zm                      increases fold level throughout the buffer
+zv                      fold view. open enough folds to view cursor
+zi                      fold invert. toggle foldenable
+
+zr                      "fold reduce" level throughout the buffer
+zm                      "fold more" level throughout the buffer
 zR                      reveal all folds throughout the buffer
 zM                      close all folds throughout the buffer
 
 :set nofoldenable
 :set foldmethod=indent
 :set foldlevel=10
+:set foldlevelstart=99
+:set foldnestmax=5
 
 
 diff mode

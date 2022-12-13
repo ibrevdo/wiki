@@ -54,6 +54,11 @@ Media
 	* <https://www.strawberrymusicplayer.org/>
 	* <https://apps.kde.org/en/kpat>
 
+### mp3 tag editors
+* puddletag - mp3 tagging (has dependencies) 
+    * <https://slackbuilds.org/repository/15.0/audio/puddletag/?search=puddletag>
+
+
 ### Video players / editors
 * SMplayer
 * Kaffeine - a player with a support for DVT

@@ -2,16 +2,16 @@
 Based on <https://jenyay.net/Programming/Vifm1>
 
 ### dual panel manager
-* to move from side to side use <TAB>, <Space> or vim window commands
+* to move from side to side use `<TAB>`, `<Space>` or vim window commands
 * to use only one panel, run `:only`
 * use `:split` or `:vsplit` to organize windows horizontally or vertically
 
 ### copy, rename or move files
 * these actions are done through using registers that hold the filenames.
-* for example, `yy` , <TAB> and `p` will copy the file to other window (using unnamed register)
+* for example, `yy` , `<TAB>` and `p` will copy the file to other window (using unnamed register)
 * to rename a file, use `cc` or `cw` (or `cW` to rename without extension)
 * to delete a file, use `dd`
-* to undo action use `u`, and C-r for a redo action
+* to undo action use `u`, and `<C-r>` for a redo action
 
 ### multiple selection
 * use `t` to select (toggle) one file
@@ -40,7 +40,7 @@ Based on <https://jenyay.net/Programming/Vifm1>
 
 ### search (and replace)
 * like in vim, use `/<regexpr>` to search in visible filelist
-* use `:s/<regexpr>/string/ilg to rename files
+* use `:s/<regexpr>/string/ilg` to rename files
 
 ### filter the files view
 * `=<regexpr>`, for example, `=zip` will show only zip files
@@ -76,3 +76,16 @@ Based on <https://jenyay.net/Programming/Vifm1>
 * `:bmarks` show bookmarks, and use Enter to go to one of the folders
 * same tag can be used on multiple bookmarks. a bookmark can have more than one tag
 * `:bmark <tag>` to show a list of bookmarks that have this tag
+
+## Additional tips
+
+### Find files in tree
+With: `set findprg="ag --nocolor --smart-case -g %p"`
+you can find files whose name contains a string by using: `:find string`
+
+### Version control system
+You can easily launch a `git` TUI, like `tig` or `lazygit`, from within vifm:
+```
+:!tig<cr>
+:!lazygit<cr>
+```

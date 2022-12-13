@@ -9,11 +9,7 @@
     "ist"         : "is",
     "sind"        : "are",
     "Mich"        : "me",
-    "Den / deine" : "your",
+    "Dein / deine" : "your",
     "seine"       : "his",
-    "ihr"         : "her",
-    "heute"       : "this/today",
-    "hier"        : "here",
-    "rechts"      : "right",
-    "links"       : "left"
+    "ihr"         : "her"
 }

@@ -10,6 +10,14 @@ The ending is `in` for she, and `e` for they
 freund  -   freundin    -   freunde
 ```
 
+### His and hers
+Just like other possession words, `sein` and `ihr` have different endigs depending
+on the gender of the following noun! They are similar to `ein` endings.
+```
+Ich mag seinen Bruder, aber ich liebe seine Schwester
+I like his brother, but I love his sister
+```
+
 ### Just words
 
 [Just words](./words/just_words.json)
@@ -26,17 +34,20 @@ freund  -   freundin    -   freunde
 ### The and a/an
 
 ```
-| Male            | Female   | We/They   | Him on subject   |     |
-| --------------- | -------- | --------- | ---------------- | --- |
-| Der             | Die      | Das       | Den              | the |
-| ein             | eine     |           |                  | a   |
-| mein            | meine    | meine     | meinen           | my  |
-| kein / nicht    |          |           | keinen           | no  |
+| Male            | Female/plural   | We/They   | Him on subject   |     |
+| --------------- | --------------- | --------- | ---------------- | --- |
+| Der             | Die             | Das       | Den              | the |
+| ein             | eine            |           |                  | a   |
+| mein            | meine           | meine     | meinen           | my  |
+| kein / nicht    |                 |           | keinen           | no  |
 ```
 
 ### Question and connection words
 
 [Question and connection words](./words/question_and_connection_words.json)
+
+`im`    - in (location, which is masculine/neuter)
+`zum`   - to (location, which is masculine/neuter)
 
 ### Numbers
 
@@ -56,7 +67,7 @@ freund  -   freundin    -   freunde
 | Es shneit                       | It’s snowing                      |
 | Ich heise                       | My name is                        |
 | Vielen Dank, alles gute         | Thank you very much, All the best |
-| Shade, ich kann nicht           | Too bad, I can’t                  |
+| Shade, ich kann nicht           | Too bad, I can't                  |
 | Super, Ich freue mich           | Super, I look forward to it       |
 | Das macht funfunddreiSig dollar | It will be thirty five dollars    |
 | Bis zum hotel                   | To the hotel                      |
@@ -86,6 +97,7 @@ Examples:
 * `Das Cafe ist von sieben bis vier geoffnet` - The cafe shop is open from seven till four
 * `Mein freund mag den Tisch nicht` - My friend doesn’t like the table
 * `Mein Hund braucht keinen Schreibtisch` - My dog doesn’t need a desk
+* `Ich kann kein instrument spielen` - I can't play an instrument
 
 ### Sentence “would like to <subject> <verb>” and “<verb> like”
 
@@ -101,6 +113,11 @@ Kein changes based on noun’s gender
 * `Ich habe um sechs keine zeit` - I have no time at six
 * `Ich habe kein Geld` - I don’t have money
 
+### TP rule - time before space
+Time phrases, like `am Montag` or `morgen`, go before place phrases, like 
+`nach Wien` or `hier`
+* `Sie reisen im April nach Munchen` - They are traveling to Munich in April
+
 ### Verbs endings
 
 |       |        |          |            |
@@ -108,6 +125,16 @@ Kein changes based on noun’s gender
 | Ich   | du     | Er / sie | Sie / sie  |
 | jogge | joggst | joggt    | joggen     |
 | I     | you    | He / she | They (You) |
+
+### Verb endings - haben
+|          |       |
+|----------|-------|
+| ich      | habe  |
+| du       | hast  |
+| er / sie | hat   |
+| wir      | haben |
+| ihr      | habt  |
+| sie      | haben |
 
 ### Just verbs
 

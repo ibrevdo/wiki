@@ -16,9 +16,13 @@
 
 ---
 
-* Albania map             https://upload.wikimedia.org/wikipedia/commons/d/d8/Albania_map-ru.svg
+* Albania map             <https://upload.wikimedia.org/wikipedia/commons/d/d8/Albania_map-ru.svg>
 
 ### Europe treks
+
+* offline hiking maps resource
+<https://atgardner.github.io/pages/offline-maps.html>
+
 * [שבילים ארוכים וטרקים באירופה](https://www.facebook.com/groups/1607274969519479)
 * [The Alta Via 1: A guide to the trek, by Alpine Exploratory](https://www.alpineexploratory.com/walking-guides/alta-via-1.html)
 * [	Alta Via 2 - דולומיטים איטליה](http://www.hike.co.il/posts/t65714-Alta-Via-2---%d7%93%d7%95%d7%9c%d7%95%d7%9e%d7%99%d7%98%d7%99%d7%9d-%d7%90%d7%99%d7%98%d7%9c%d7%99%d7%94?fbclid=IwAR1ky2XAuu2wfmwQvNZ37GHJR0N8MOEPVxtRKIHp2f7CEixviEl8dTEBpmg)
